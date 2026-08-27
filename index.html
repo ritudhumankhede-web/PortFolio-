@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Ritu Dhumankhede — Computer Engineering Student & Frontend Developer
+    </title>
+    <meta
+      name="description"
+      content="Portfolio of Ritu Dhumankhede — Computer Engineering student and frontend developer building clean, interactive, user-focused digital experiences."
+    />
+
+    <!-- Google Fonts: Fraunces (display serif with organic, botanical character) + Manrope (clean humanist body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Decorative ambient background: soft organic gradient blobs, sits behind entire page -->
+    <div class="ambient-bg" aria-hidden="true">
+      <div class="blob blob--one"></div>
+      <div class="blob blob--two"></div>
+      <div class="blob blob--three"></div>
+    </div>
+
+    <!-- ============ NAVBAR ============ -->
+    <header class="navbar" id="navbar">
+      <nav class="navbar__inner">
+        <a href="#home" class="navbar__logo">Ritu <span>Dhumankhede</span></a>
+
+        <button
+          class="navbar__toggle"
+          id="navToggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="navbar__menu" id="navMenu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li>
+            <a
+              href="images/resume-placeholder.pdf"
+              class="btn btn--small btn--filled"
+              download
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="home">
+        <div class="hero__inner">
+          <div class="hero__text" data-reveal>
+            <p class="eyebrow">Hello, I'm Ritu</p>
+            <h1 class="hero__title">
+              Computer Engineering Student
+              <span class="hero__title-accent">&amp; Frontend Developer</span>
+            </h1>
+
+            <div class="hero__actions">
+              <a href="#projects" class="btn btn--filled">View My Work</a>
+              <a
+                href="./src/RituDhumankhede_Resume.pdf"
+                class="btn btn--outline"
+                download
+                >Download Resume</a
+              >
+            </div>
+          </div>
+
+          <div class="hero__visual" aria-hidden="true" data-reveal>
+            <!-- Signature element: layered pond-ripple + botanical composition, built entirely in CSS/SVG -->
+            <svg
+              class="pond"
+              viewBox="0 0 480 480"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle class="ripple ripple--1" cx="240" cy="260" r="70" />
+              <circle class="ripple ripple--2" cx="240" cy="260" r="120" />
+              <circle class="ripple ripple--3" cx="240" cy="260" r="170" />
+
+              <g class="leaf-cluster">
+                <path
+                  class="leaf leaf--a"
+                  d="M240 260 C 150 240, 120 150, 190 90 C 260 150, 260 220, 240 260 Z"
+                />
+                <path
+                  class="leaf leaf--b"
+                  d="M240 260 C 330 250, 380 180, 340 110 C 260 130, 230 200, 240 260 Z"
+                />
+                <path
+                  class="leaf leaf--c"
+                  d="M240 260 C 170 310, 100 320, 70 260 C 130 220, 200 220, 240 260 Z"
+                />
+                <circle class="lily-center" cx="240" cy="260" r="26" />
+              </g>
+
+              <g class="petal-float petal-float--1"><circle r="5" /></g>
+              <g class="petal-float petal-float--2"><circle r="4" /></g>
+              <g class="petal-float petal-float--3"><circle r="6" /></g>
+            </svg>
+          </div>
+        </div>
+        <div class="scroll-cue" aria-hidden="true"><span></span></div>
+      </section>
+
+      <!-- curved divider -->
+      <div class="divider divider--to-midnight" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,64 C 360,120 1080,0 1440,64 L1440,120 L0,120 Z"></path>
+        </svg>
+      </div>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="about" id="about">
+        <div class="section-inner">
+          <p class="eyebrow eyebrow--light">>>>About</p>
+          <h2 class="section-title">About Me</h2>
+
+          <div class="about__grid">
+            <p class="about__intro" data-reveal>
+              Hi! I'm Ritu Dhumankhede, a Computer Engineering student at Dr. D.
+              Y. Patil Institute of Technology, Pimpri and a Frontend Developer
+              who enjoys bringing ideas to life through code. I love creating
+              clean, responsive, and user-friendly websites and learning
+              something new with every project I build. Right now, I'm working
+              on improving my Data Structures & Algorithms skills and exploring
+              Artificial Intelligence and Machine Learning. I'm a big believer
+              in learning by doing — building projects, trying new technologies,
+              making mistakes, and getting better along the way. My goal is to
+              grow into a Software Engineer specializing in AI.
+            </p>
+
+            <div class="about__cards" data-reveal>
+              <div class="info-card">
+                <span class="info-card__icon" aria-hidden="true">🎓</span>
+                <h3>Computer Engineering</h3>
+                <p>Building a strong foundation across CS fundamentals.</p>
+              </div>
+              <div class="info-card">
+                <span class="info-card__icon" aria-hidden="true">🎓</span>
+                <h3>Frontend Development</h3>
+                <p>Crafting clean, intentional, user-focused interfaces.</p>
+              </div>
+              <div class="info-card">
+                <span class="info-card__icon" aria-hidden="true">🎓</span>
+                <h3>Problem Solving</h3>
+                <p>Enjoying the process of breaking problems into pieces.</p>
+              </div>
+              <div class="info-card">
+                <span class="info-card__icon" aria-hidden="true">🎓</span>
+                <h3>Currently Learning AI/ML</h3>
+                <p>Exploring where intelligence meets interface.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SKILLS ============ -->
+      <section class="skills" id="skills">
+        <div class="section-inner">
+          <p class="eyebrow">>>>Skills</p>
+          <h2 class="section-title section-title--light">What I Work With</h2>
+
+          <div class="skills__groups">
+            <div class="skill-group" data-reveal>
+              <h3 class="skill-group__title">Frontend</h3>
+              <div class="skill-badges">
+                <span class="badge">HTML5</span>
+                <span class="badge">CSS3</span>
+                <span class="badge">JavaScript</span>
+              </div>
+            </div>
+
+            <div class="skill-group" data-reveal>
+              <h3 class="skill-group__title">Programming</h3>
+              <div class="skill-badges">
+                <span class="badge">Python</span>
+              </div>
+            </div>
+
+            <div class="skill-group" data-reveal>
+              <h3 class="skill-group__title">Tools</h3>
+              <div class="skill-badges">
+                <span class="badge">Git</span>
+                <span class="badge">GitHub</span>
+                <span class="badge">VS Code</span>
+              </div>
+            </div>
+
+            <div class="skill-group" data-reveal>
+              <h3 class="skill-group__title">Currently Learning</h3>
+              <div class="skill-badges">
+                <span class="badge badge--learning">DSA <em>growing</em></span>
+                <span class="badge badge--learning"
+                  >AI/ML <em>exploring</em></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- curved divider -->
+      <div class="divider divider--to-beige" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,60 C 400,0 1040,120 1440,40 L1440,120 L0,120 Z"></path>
+        </svg>
+      </div>
+
+      <!-- ============ PROJECTS ============ -->
+      <section class="projects" id="projects">
+        <div class="section-inner">
+          <p class="eyebrow eyebrow--light">>>>Projects</p>
+          <h2 class="section-title">Things I've Built</h2>
+
+          <div class="project-grid">
+            <article class="project-card" data-reveal>
+              <div class="project-card__media">
+                <img
+                  src="./src/mindbloom-Ritu.jpeg"
+                  alt="MindBloom"
+                   class="project-card__image"/>
+              </div>
+              <div class="project-card__body">
+                <h3>MindBloom</h3>
+                <p>
+                  A mental wellness web platform designed to provide users with
+                  a supportive and interactive digital experience.
+                </p>
+                <div class="tech-badges">
+                  <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                </div>
+                <div class="project-card__actions">
+                  <a href="https://github.com/ritudhumankhede-web/MindBloom.git" class="btn btn--tiny btn--outline">GitHub</a>
+                  <a href="https://github.com/ritudhumankhede-web/MindBloom.git" class="btn btn--tiny btn--filled">Live Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-reveal>
+              <div class="project-card__media">
+                <img
+                  src="./src/Cafe_ruu-ritu.png"
+                  alt="Cafe-Ruu Website"
+                   class="project-card__image"/>
+              </div>
+              <div class="project-card__body">
+                <h3>Cafe-Ruu</h3>
+                <p>
+                  Responsive and userfriendly Restaurant website with ordering, cart, contact with Mail and WhatsApp integration.
+                </p>
+                <div class="tech-badges">
+                  <span>HTML</span><span>CSS</span><span>JS</span>
+                </div>
+                <div class="project-card__actions">
+                  <a href="https://github.com/ritudhumankhede-web/Cafe-Ruu.git" class="btn btn--tiny btn--outline">GitHub</a>
+                  <a href="https://caferuu.netlify.app/" class="btn btn--tiny btn--filled">Live Demo</a>
+                </div>
+              </div>
+            </article>
+
+            
+          </div>
+        </div>
+      </section>
+
+   
+
+      <!-- curved divider -->
+      <div class="divider divider--to-darkgreen" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,40 C 400,120 1040,0 1440,60 L1440,120 L0,120 Z"></path>
+        </svg>
+      </div>
+
+      <!-- ============ RESUME CTA ============ -->
+      <section class="resume-cta" id="resume">
+        <div class="section-inner section-inner--narrow">
+          <h2 class="section-title">Want to Know More About My Journey?</h2>
+          <a
+            href="./src/RituDhumankhede_Resume.pdf"
+            class="btn btn--filled btn--large"
+            download
+            >Download Resume</a
+          >
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="contact" id="contact">
+        <div class="section-inner section-inner--narrow">
+          <p class="eyebrow eyebrow--light">Contact</p>
+          <h2 class="section-title">Let's Create Something</h2>
+          <p class="contact__text">
+            Have an idea, project or opportunity? Let's connect.
+          </p>
+
+          <div class="contact__links">
+            <a href="https://mail.google.com/mail/?view=cm&to=ritudhumankhede1@gmail.com" class="contact__link">
+              <span class="contact__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M3 6l9 7 9-7M3 6h18v12H3V6z"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              Email
+            </a>
+            <a
+              href="https://github.com/ritudhumankhede-web"
+              class="contact__link"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="contact__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.3-3.4-1.3-.4-1.1-1-1.4-1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.6-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.7 1 .8-.2 1.6-.3 2.5-.3s1.7.1 2.5.3c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.6 1 1.5 1 2.6 0 3.8-2.4 4.6-4.6 4.9.4.3.7 1 .7 2v2.9c0 .3.2.6.7.5 3.9-1.3 6.8-5.1 6.8-9.6C22 6.6 17.5 2 12 2z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              GitHub
+            </a>
+            <a
+              href="https://linkedin.com/in/ritudhumankhede"
+              class="contact__link"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="contact__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.66 4.78 6.12V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21h-4V9z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <p>Designed &amp; Built by Ritu Dhumankhede</p>
+        <ul class="footer__nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="footer__social">
+          <a
+            href="https://github.com/your-username"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            >GitHub</a
+          >
+          <a
+            href="https://linkedin.com/in/your-profile"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      ↑
+    </button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
